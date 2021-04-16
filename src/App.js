@@ -18,7 +18,6 @@ import Earn from "./Pages/Earn/Earn";
 function App() {
   return (
     <div className="App">
-      hello world
 
       <Switch>
         <Route exact path="/" component={Home} />

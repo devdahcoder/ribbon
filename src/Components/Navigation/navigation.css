@@ -1,1 +1,54 @@
-/* No CSS *//*# sourceMappingURL=navigation.css.map */
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0px -3px 3px -4px #000000;
+}
+
+.mobile-nav .mobile-ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0.7em 0;
+}
+
+.mobile-nav .mobile-ul .mobile-li {
+  display: inline-block;
+  width: 100%;
+}
+
+.mobile-nav .mobile-ul .mobile-li .mobile-nav-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0.5;
+  color: #df2020;
+}
+
+.mobile-nav .mobile-ul .mobile-li .mobile-nav-link .mobile-link-display {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mobile-nav .mobile-ul .mobile-li .mobile-nav-link .mobile-link-display img {
+  width: 30px;
+}
+
+.mobile-nav .mobile-ul .mobile-li .mobile-nav-link .mobile-link-display .mobile-nav-text {
+  padding-top: 0.6em;
+}
+
+.mobile-nav .mobile-ul .mobile-li .active {
+  opacity: 1;
+}
+/*# sourceMappingURL=navigation.css.map */
