@@ -1,3 +1,9 @@
+@mixin flexDisplay() {
+    display: flex;
+    align-items: center;
+}
+
+
 .mobile-nav {
     position: fixed;
     bottom: 0;
@@ -8,14 +14,11 @@
     box-shadow: 0px -3px 3px -4px #000000;
 
     .mobile-ul {
-        display: flex;
-        align-items: center;
+        @include flexDisplay();
         flex-direction: row;
         list-style: none;
         justify-content: space-between;
         padding: 0.7em 0;
-        // width: 90%;
-        // margin: 0 auto;
 
         .mobile-li {
             display: inline-block;
@@ -23,9 +26,8 @@
 
             
             .mobile-nav-link {
+                @include flexDisplay();
                 width: 100%;
-                display: flex;
-                align-items: center;
                 justify-content: center;
                 text-align: center;
                 text-decoration: none;
@@ -36,8 +38,7 @@
 
 
                 .mobile-link-display {
-                    display: flex;
-                    align-items: center;
+                    @include flexDisplay();
                     flex-direction: column;
                     img {
                         width: 30px;
@@ -48,7 +49,6 @@
                     }
                 }
             }
-
             .active {
                 opacity: 1;
             }

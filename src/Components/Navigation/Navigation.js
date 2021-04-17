@@ -10,14 +10,15 @@ import MarketIcon from  '../../Assets/images/market.svg';
 import EarnIcon from '../../Assets/images/giftbox.svg';
 
 //imported packages
-import { Link } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
 
 const Navigation = () => {
+
     return (
         <nav className="mobile-nav">
             <ul className="mobile-ul">
                 <li className="mobile-li">
-                    <Link to="/" className="mobile-nav-link active">
+                    <NavLink exact   to="/" className="mobile-nav-link" activeClassName="active" >
                         <div className="mobile-link-display">
                             <img src={HomeIcon} alt="home-icon"/>
 
@@ -25,20 +26,20 @@ const Navigation = () => {
                                 <p>Home</p>
                             </div>
                         </div>
-                    </Link>
+                    </NavLink >
                 </li>
                 <li className="mobile-li">
-                    <Link to="/activity" className="mobile-nav-link">
+                    <NavLink exact   to="/activity" className="mobile-nav-link" activeClassName="active" >
                         <div className="mobile-link-display">
                             <img src={ActivityIcon} alt="activity-icon"/>
                             <div className="mobile-nav-text">
                                 <p>Activity</p>
                             </div>
                         </div>
-                    </Link>
+                    </NavLink >
                 </li>
                 <li className="mobile-li">
-                    <Link to="wallet" className="mobile-nav-link">
+                    <NavLink exact   to="wallet" className="mobile-nav-link" activeClassName="active" >
                         <div className="mobile-link-display">
                             <img src={WalletIcon} alt="wallet-icon"/>
 
@@ -46,10 +47,10 @@ const Navigation = () => {
                                 <p>Wallet</p>
                             </div>
                         </div>
-                    </Link>
+                    </NavLink >
                 </li>
                 <li className="mobile-li">
-                    <Link to="market" className="mobile-nav-link">
+                    <NavLink exact  to="market" className="mobile-nav-link" activeClassName="active" >
                         <div className="mobile-link-display">
                             <img src={MarketIcon} alt="market-icon"/>
 
@@ -57,10 +58,10 @@ const Navigation = () => {
                                 <p>Market</p>
                             </div>
                         </div>
-                    </Link>
+                    </NavLink >
                 </li>
                 <li className="mobile-li">
-                    <Link to="earn" className="mobile-nav-link">
+                    <NavLink exact   to="earn" className="mobile-nav-link " activeClassName="active" >
                         <div className="mobile-link-display">
                             <img src={EarnIcon} alt="earn-icon"/>
 
@@ -68,7 +69,7 @@ const Navigation = () => {
                                 <p>Earn</p>
                             </div>
                         </div>
-                    </Link>
+                    </NavLink >
                 </li>
             </ul>
         </nav>
